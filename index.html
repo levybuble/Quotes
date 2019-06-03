@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <div align="center">
+        <h1 style="color: gold" id="quote"></h1>
+    </div>
+
+
+    <script>
+        var quoteArray = [
+            "You are not what others think of you!",
+            "Make hay while the sun shines",
+            "Stay Hungry, Stay Foolish",
+            "Whatever you are, be good!",
+            "While there is life, there is hope!",
+            "You reap what you sow!",
+            "Whatever happens, just keep moving on!",
+            "Keep on walking!",
+            "Hit the road Jack!",
+            "Get all you can and can all you get!"
+        ];
+
+        var randomNumber = Math.floor((Math.random() * 20) + 1);
+        document.getElementById('quote').innerHTML = quoteArray[randomNumber - 1];
+    </script>
+</body>
+</html>
